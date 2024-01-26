@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body {
+  scroll-snap-type: y mandatory;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  padding: 1em;
+  scroll-snap-align: start;
+}
+p,
+.nums .container div {
+  padding: 1em;
+  background-color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.one {
+  background-color: #3f51b5;
+}
+.nums {
+  background-color: #03a9f4;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+  width: max(250px, 80%);
+}
+.nums .container div {
+  flex: 1;
+
+  -webkit-transition: 450ms;
+  -moz-transition: 450ms;
+  -ms-transition: 450ms;
+  -o-transition: 450ms;
+  transition: 450ms;
+}
+.three {
+  background-color: #3f51b5;
+}
+@media (max-width: 31.25em) {
+  .nums {
+    gap: 1em;
+  }
+  .nums .container div {
+    padding: 0.5em;
+  }
+}
+@media (max-width: 49.9em) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 50em) {
+  .nums .container div {
+    max-width: 200px;
+  }
+}
