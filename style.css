@@ -45,7 +45,6 @@ p,
 }
 .nums .container div {
   flex: 1;
-
   -webkit-transition: 450ms;
   -moz-transition: 450ms;
   -ms-transition: 450ms;
